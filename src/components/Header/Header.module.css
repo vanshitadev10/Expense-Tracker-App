@@ -1,0 +1,147 @@
+.header {
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(65, 65, 65);
+    color: white;
+    padding: 0 1% 0 10%;
+}
+
+.header nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.header ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+  
+.header li a{
+    margin: 0 1rem;
+}
+
+.header div .settings-button{
+    margin-left: 1rem;
+    width: fit-content;
+    background-color: rgb(65, 65, 65);
+    border: none;
+}
+.header div .settings-button:hover{
+    cursor: pointer;
+}
+  
+.header a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.25rem;
+}
+
+.logout-btn{
+    margin-left: 2rem;
+}
+
+
+.sliding-navbar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(45, 45, 45);
+    z-index: 2;
+    color: #fff;
+    padding-right: 1rem;
+    overflow: hidden;
+    transition: .7s;
+}
+
+.sliding-navbar div{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    align-items: center;
+    justify-items: center;
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+.sliding-navbar div h2{
+    font-size: 2rem;
+}
+
+.sliding-navbar ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
+
+.sliding-navbar li{
+    width: 95%;
+    border-bottom: 2px solid rgb(99, 99, 99);
+    padding: 0.5rem;
+}
+.sliding-navbar li:last-child{
+    margin-bottom: 1rem;
+}
+.sliding-navbar li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.sliding-navbar li a.delete{
+    color: #ff4141;
+    text-decoration: none;
+}
+.sliding-navbar li a.delete:hover{
+    color: #ffbb00;
+}
+
+:is(.header, .sliding-navbar) :is(a:hover, a.active) {
+    color: #ffbb00;
+}
+
+.sliding-navbar .close-button{
+    background-color: rgb(45, 45, 45);
+    border: none;
+}
+.sliding-navbar .close-button:hover{
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 992px){
+    .header {
+        height: 10rem;
+    }
+
+    .sliding-navbar ul{
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .header{
+        flex-direction: column;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .header h1{
+        grid-area: heading;
+    }
+
+    .logout-btn{
+        margin: 0;
+        grid-area: button;
+    }
+
+    .header div .settings-button{
+        grid-area: settings;
+    }
+}

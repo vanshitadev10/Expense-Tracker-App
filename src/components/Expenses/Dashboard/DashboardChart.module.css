@@ -1,0 +1,88 @@
+.chart__container{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.chart__container h1{
+    margin-left: 4rem;
+}
+
+.chart__container div .button__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0;
+}
+
+.chart__container div .button__list li{
+    list-style: none;
+}
+
+.chart__container div .button__list li button{
+    border: 0;
+    background-color: rgb(65, 65, 65);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+}
+
+.chart__container div .button__list li button:hover{
+    cursor: pointer;
+    background-color: rgb(80, 80, 80);
+}
+
+div.charts__months{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10vw;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.chart__container .single-plot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2%;
+}
+
+.btn__disabled{
+    pointer-events: none;
+}
+
+
+@media only screen and (max-width: 992px){
+    .chart__container h1{
+        margin-left: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .chart__container div .button__list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+
+    .chart__container div .button__list li button{
+        padding: 0.8rem 1.2rem;
+        font-size: 0.8rem;
+    }
+
+    div.charts__months{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+    }
+}

@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+
+.dashboard__container{
+    font-family: 'Alata', sans-serif;
+    color: white;
+    animation: page-change 0.6s ease-in-out;
+}
+
+@keyframes page-change {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+.dashboard__container .welcome{
+    padding-left: 1rem;
+    font-size: 3rem;
+    color: #ffbb00;
+}
+
+
+@media only screen and (max-width: 992px){
+    .dashboard__container .welcome{
+        font-size: 2.2rem;
+    }
+}

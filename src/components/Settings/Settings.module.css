@@ -1,0 +1,106 @@
+.container__background{
+    background-color: rgb(65, 65, 65);
+    padding: 2rem;
+}
+
+.password{
+    margin-top: 5rem;
+}
+.username{
+    margin-top: 7rem;
+}
+.delete-account{
+    margin-top: 9rem;
+}
+
+.images{
+    width: 40%;
+    margin-left: 9rem;
+}
+
+.container{
+    background-color: white;
+    width: 80%;
+    margin-left: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 150px 2px 2px 150px;
+    padding-bottom: 2rem;
+}
+
+.container h1{
+    font-size: 3rem;
+}
+
+.container .container__para{
+    width: 70%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+
+.container__input{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.container__input div{
+    width: 100%;
+}
+
+.container__input p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+}
+
+.delete-account__button{
+    background-color: red;
+    color: #fff;
+}
+.delete-account__button:hover{
+    background-color: #ff4141;
+}
+
+
+@media only screen and (max-width: 992px){
+    .container{
+        border-radius: 16px;
+        margin: 0;
+        width: 100%;
+    }
+
+    .username{
+        margin-top: 5rem;
+    }
+    .delete-account{
+        margin-top: 5rem;
+    }
+
+    .container h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .container .container__para{
+        width: 80%;
+        padding: 0 2rem;
+    }
+
+    .container__input{
+        width: 70%;
+    }
+
+    .container__input p{
+        text-align: center;
+        font-size: 0.9rem;
+    }
+}

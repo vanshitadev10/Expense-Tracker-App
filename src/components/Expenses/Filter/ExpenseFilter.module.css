@@ -1,0 +1,27 @@
+.expense-filter__container{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    padding-right: 2rem;
+}
+
+.expense-filter{
+    font-size: 1rem;
+    padding: 4px;
+    border-radius: 2px;
+}
+
+select:focus-visible{
+    outline-color: rgb(65, 65, 65);
+}
+
+
+@media only screen and (max-width: 992px){
+    .expense-filter__container{
+        margin-top: 2rem;
+        font-size: 1rem;
+    }
+    
+    .expense-filter{
+        font-size: 0.8rem;
+    }
+}

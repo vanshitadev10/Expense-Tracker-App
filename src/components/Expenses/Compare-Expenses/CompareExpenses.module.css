@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+
+.comparison__container{
+    font-family: 'Alata', sans-serif;
+    color: white;
+    animation: page-change 0.6s ease-in-out;
+}
+
+@keyframes page-change {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}

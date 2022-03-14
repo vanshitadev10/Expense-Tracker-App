@@ -1,0 +1,50 @@
+.chart__container{
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.chart__container h1{
+    margin-left: 4rem;
+}
+
+.expense__filter{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-container{
+    width: 70%;
+    margin: auto;
+    margin-top: 3rem;
+    max-height: 50vh;
+    overflow-y: auto;
+}
+
+.chart__container .single-plot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2%;
+}
+
+
+@media only screen and (max-width: 992px){
+    .chart__container h1{
+        margin-left: 1rem;
+        font-size: 1.5rem;
+    }
+    .item-container{
+        width: 80%;
+        max-height: 80vh;
+    }
+    .chart__container .single-plot{
+        margin-left: 0;
+    }
+}

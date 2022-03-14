@@ -1,0 +1,32 @@
+li{
+    list-style: none;
+}
+
+.expense__container{
+    background-color: black;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.expense__filter{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.expense__list{
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+
+@media only screen and (max-width: 992px){
+    .expense__container{
+        padding-bottom: 0rem;
+    }
+    .expense__list{
+        max-height: 80vh;
+    }
+}

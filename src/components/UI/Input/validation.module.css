@@ -1,0 +1,21 @@
+.not-valid{
+    margin-bottom: 2rem;
+}
+
+.not-valid p{
+    color: red;
+}
+
+.not-valid .input{
+    border: 2px solid red;
+    background-color: #ffe0e0;
+}
+
+.valid{
+    margin-bottom: 2rem;
+}
+
+.btn-secondary{
+    pointer-events: none;
+    opacity: 0.6;
+}

@@ -1,0 +1,36 @@
+.input-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.input-container label{
+    font-size: 1.3rem;
+}
+
+.input-container input{
+    width: 100%;
+    font-size: 1rem;
+    padding: 4px;
+    border: 2px solid rgb(107, 107, 107);
+    border-radius: 4px;
+    text-align: center;
+}
+
+input:focus-visible{
+    outline-color: #ff9100;
+}
+
+
+@media only screen and (max-width: 992px){
+    .input-container label{
+        font-size: 1.1rem;
+    }
+
+    .input-container input{
+        font-size: 0.9rem;
+        padding: 3px;
+    }
+}

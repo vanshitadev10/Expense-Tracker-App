@@ -1,0 +1,35 @@
+.error{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error__text{
+    color: white;
+    text-align: center;
+    margin-top: 8rem;
+}
+
+.error__link {
+    font-size: 1.2rem;
+    color: #ffae00;
+    text-align: center;
+}
+  
+.error__link:hover,
+.error__link:active {
+    color: #ffbb00;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 992px){
+    .error h1{
+        font-size: 1.2rem;
+    }
+    
+    .error__link {
+        font-size: 1rem;
+    }
+}
