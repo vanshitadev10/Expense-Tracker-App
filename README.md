@@ -74,4 +74,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 -------------------------
 BEFORE RUNNING THE CODE:
 You'll need a Firebase Realtime Database API key and Firebase Authentication API key.
-Add the Database key to the src/store/ExpenseInfoProvider.js file and authentication key to src/components/Firebase/firebase.js file
+Add the Database key to the src/store/ExpenseInfoProvider.js file and authentication key to src/components/Firebase/Firebase.js file
