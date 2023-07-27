@@ -64,7 +64,7 @@ const ExpensesInfoProvider = (props) => {
         dispatchValue({ type: 'SET_ERROR', err: null });
 
         try {
-            const response = await fetch('https://[PROJECT_ID].firebaseio.com/[PROJECT_NAME].json', {
+            const response = await fetch('https://expense-tracker-54c98-default-rtdb.firebaseio.com/expenses.json', {
                 method: 'POST',
                 body: JSON.stringify(userData),
                 headers: {
@@ -88,7 +88,7 @@ const ExpensesInfoProvider = (props) => {
         dispatchValue({ type: 'SET_ERROR', err: null });
 
         try {
-            const response = await fetch('https://[PROJECT_ID].firebaseio.com/[PROJECT_NAME].json');
+            const response = await fetch('https://expense-tracker-54c98-default-rtdb.firebaseio.com/expenses.json');
 
             const data = await response.json();
             const loadExpenses = [];
@@ -119,7 +119,7 @@ const ExpensesInfoProvider = (props) => {
         dispatchValue({ type: 'SET_ERROR', err: null });
 
         try {
-            const response = await fetch('https://[PROJECT_ID].firebaseio.com/[PROJECT_NAME]' + `/${item}` + '.json', {
+            const response = await fetch('https://expense-tracker-54c98-default-rtdb.firebaseio.com/expenses' + `/${item}` + '.json', {
                 method: 'DELETE',
                 body: JSON.stringify(item),
                 headers: {
